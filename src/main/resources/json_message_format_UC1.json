@@ -1,0 +1,63 @@
+[
+{
+	"deviceId" : "04961048",
+	"timestamp" : "time when request was issued + time zone",
+	"measurementsIngestedLast_24h" : [
+		{
+			"timestampReceived": "2023-01-15 06:30:27+0000",
+			"timestampCreated": "2023-01-14 00:15:00+0000",
+			"intervalStart": "2023-01-14 00:00:00+0000",
+			"intervalEnd": "2023-01-14 00:15:00+0000"
+		},		
+		{
+			"timestampReceived": "2023-01-15 06:30:27+0000",
+			"timestampCreated": "2023-01-14 23:30:00+0000",
+			"intervalStart": "2023-01-14 23:15:00+0000",
+			"intervalEnd": "2023-01-14 23:30:00+0000"
+		},
+		{
+			"timestampReceived": "2023-01-15 06:30:27+0000",
+			"timestampCreated": "2023-01-14 23:45:00+0000",
+			"intervalStart": "2023-01-14 23:30:00+0000",
+			"intervalEnd": "2023-01-14 23:45:00+0000"
+		},
+		{
+			"timestampReceived": "2023-01-15 06:30:27+0000",
+			"timestampCreated": "2023-01-15 00:00:00+0000",
+			"intervalStart": "2023-01-14 23:45:00+0000",
+			"intervalEnd": "2023-01-15 00:00:00+0000"
+		}
+	]
+}
+,
+{
+	"deviceId" : "10192",
+	"timestamp" : "time when request was issued + time zone",
+	"measurementsIngestedLast_24h" : [
+		{
+			"timestampReceived": "2023-03-21 12:15:32+0000",
+			"timestampCreated": "2023-03-21 13:15:00+0100",
+			"intervalStart": "2023-03-21 13:00:00+0100",
+			"intervalEnd": "2023-03-21 13:15:00+0100"
+		},
+		{
+			"timestampReceived": "2023-03-22 07:45:31+0000",
+			"timestampCreated": "2023-03-22 08:45:00+0100",
+			"intervalStart": "2023-03-22 08:30:00+0100",
+			"intervalEnd": "2023-03-22 08:45:00+0100"
+		},
+		{
+			"timestampReceived": "2023-03-22 08:30:31+0000",
+			"timestampCreated": "2023-03-22 09:00:00+0100",
+			"intervalStart": "2023-03-22 08:45:00+0100",
+			"intervalEnd": "2023-03-22 09:00:00+0100"
+		},
+		{
+			"timestampReceived": "2023-03-22 08:30:31+0000",
+			"timestampCreated": "2023-03-22 09:15:00+0100",
+			"intervalStart": "2023-03-22 09:00:00+0100",
+			"intervalEnd": "2023-03-22 09:15:00+0100"
+		}
+	]
+}
+]
