@@ -162,58 +162,58 @@ public class UseCase1Application {
 		return (ArrayNode) objectMapper.readTree(new File(filePath));
 	}
 	
-	//Reading from json file 
-	private static JsonNode readJsonFromFile(String filePath) throws IOException{
-		ObjectMapper objectMapper = new ObjectMapper();
-		return objectMapper.readTree(new File(filePath));
-	}
-	
-	
-	//Changing json file
-	private static void modifyJson(JsonNode jsonNode) {
-		if(jsonNode.has("deviceId")) {
-			ObjectNode objectNode = (ObjectNode) jsonNode;
-			objectNode.put("deviceId", "dalbaeb");
-		}else {
-			System.out.println("ТЫ что ебанутый ? ");
-		}
-	}
-	
-	
-	//Writing into json file
-	private static void writeJsonToFile(JsonNode jsonNode, String filePath) throws IOException{
-		ObjectMapper objectMapper = new ObjectMapper();
-		objectMapper.writeValue(new File(filePath), jsonNode);
-	}
-	
-	
-	//Taking value from some field
-	private static String getFieldValue(JsonNode jsonNode, String fieldName) {
-		if(jsonNode.has(fieldName)) {
-			String readingFieldName = jsonNode.get(fieldName).asText();
-			return readingFieldName;
-		}else {
-			System.out.println("a нихуя здесь нет");
-			return null;
-		}
-	}
-	
-	
-	
-	//Creating new json file method
-	private static ObjectNode createJsonObject() {
-		
-		ObjectMapper objectMapper = new ObjectMapper();
-        ObjectNode jsonObject = objectMapper.createObjectNode();
-
-        // Add fields to the JSON object
-        jsonObject.put("name", "John Doe");
-        jsonObject.put("age", 30);
-        jsonObject.put("city", "Example City");
-
-        return jsonObject;
-	}
-	
+//	//Reading from json file 
+//	private static JsonNode readJsonFromFile(String filePath) throws IOException{
+//		ObjectMapper objectMapper = new ObjectMapper();
+//		return objectMapper.readTree(new File(filePath));
+//	}
+//	
+//	
+//	//Changing json file
+//	private static void modifyJson(JsonNode jsonNode) {
+//		if(jsonNode.has("deviceId")) {
+//			ObjectNode objectNode = (ObjectNode) jsonNode;
+//			objectNode.put("deviceId", "dalbaeb");
+//		}else {
+//			System.out.println("ТЫ что ебанутый ? ");
+//		}
+//	}
+//	
+//	
+//	//Writing into json file
+//	private static void writeJsonToFile(JsonNode jsonNode, String filePath) throws IOException{
+//		ObjectMapper objectMapper = new ObjectMapper();
+//		objectMapper.writeValue(new File(filePath), jsonNode);
+//	}
+//	
+//	
+//	//Taking value from some field
+//	private static String getFieldValue(JsonNode jsonNode, String fieldName) {
+//		if(jsonNode.has(fieldName)) {
+//			String readingFieldName = jsonNode.get(fieldName).asText();
+//			return readingFieldName;
+//		}else {
+//			System.out.println("a нихуя здесь нет");
+//			return null;
+//		}
+//	}
+//	
+//	
+//	
+//	//Creating new json file method
+//	private static ObjectNode createJsonObject() {
+//		
+//		ObjectMapper objectMapper = new ObjectMapper();
+//        ObjectNode jsonObject = objectMapper.createObjectNode();
+//
+//        // Add fields to the JSON object
+//        jsonObject.put("name", "John Doe");
+//        jsonObject.put("age", 30);
+//        jsonObject.put("city", "Example City");
+//
+//        return jsonObject;
+//	}
+//	
 //	private static String loadJsonFromFile(String jsonFilePath) {
 //		try (Scanner scanner = new Scanner(new ClassPathResource(jsonFilePath).getInputStream(),
 //				StandardCharsets.UTF_8.name())){
